@@ -43,6 +43,8 @@ local.properties
 
 # Ignore Engine folder
 Engine/
+Projects/SaveTheQueen/tools/
+Projects/SaveTheQueen/runtime/
 
 # Ignore python compiled files
 *.pyc
