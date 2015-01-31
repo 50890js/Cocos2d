@@ -5,12 +5,11 @@
     "frameRate":60,
     "id":"gameCanvas",
     "renderMode":0,
-    "engineDir":"../../Engine/cocos2d-js-v3.2/frameworks/cocos2d-html5",
+    "engineDir":"../../Engine/cocos2d-js/frameworks/cocos2d-html5",
     "modules":[
         "cocos2d"
     ],
     "jsList":[
-        "src/resource.js",
-        "src/app.js"
+        "src/resource.js"
     ]
 }

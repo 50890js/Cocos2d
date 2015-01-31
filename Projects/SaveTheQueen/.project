@@ -14,7 +14,7 @@
 		<link>
 			<name>script</name>
 			<type>2</type>
-			<locationURI>GITS/Engine/cocos2d-js-v3.2/frameworks/js-bindings/bindings/script</locationURI>
+			<locationURI>GITS/Engine/cocos2d-js/frameworks/js-bindings/bindings/script</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>
