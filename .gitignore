@@ -43,6 +43,7 @@ local.properties
 
 # Ignore Engine folder
 Engine/
+Projects/SaveTheQueen/frameworks/
 Projects/SaveTheQueen/tools/
 Projects/SaveTheQueen/runtime/
 
