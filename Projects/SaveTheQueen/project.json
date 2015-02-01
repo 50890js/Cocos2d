@@ -10,6 +10,8 @@
         "cocos2d"
     ],
     "jsList":[
-        "src/resource.js"
+        "src/resource.js",
+        "src/Scenes/SplashScreen.js",
+        "src/Scenes/MainMenu.js"
     ]
 }
