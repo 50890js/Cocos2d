@@ -1,0 +1,5 @@
+var SplashScreen = cc.Layer.extend ( {
+	
+	
+	
+} );

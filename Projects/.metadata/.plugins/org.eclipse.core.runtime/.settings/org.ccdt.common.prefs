@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.ccdt.common.ant_path=G\:\\Andro_Dev\\ANT\\bin
+org.ccdt.common.jdk_path=G\:\\Andro_Dev\\Java7\\jdk\\bin
+org.ccdt.common.js_engine_custompath=K\:\\GITS\\Cocos2d\\Engine\\cocos2d-js
+org.ccdt.common.js_engine_path=K\:\\GITS\\Cocos2d\\Engine\\cocos2d-js
+org.ccdt.common.ndk_path=G\:\\Andro_Dev\\android-ndk-r5b-windows\\android-ndk-r9d-windows-x86_64\\android-ndk-r9d
+org.ccdt.common.python_path=C\:\\Python27
+org.ccdt.common.sdk_path=G\:\\Andro_Dev\\android-sdk_r07-windows\\android-sdk-windows

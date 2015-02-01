@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+K:\GITS\Cocos2d\Projects\.metadata\.plugins\org.ccdt.jsdt.core\indexes
+1763220252.index
+1062876620.index
+4030938048.index
+1064347055.index
+3245148817.index
+3024977028.index
