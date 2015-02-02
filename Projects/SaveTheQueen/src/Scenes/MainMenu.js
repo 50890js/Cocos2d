@@ -1,14 +1,15 @@
-var MainMenu = cc.Layer.extend( {
+var MainMenu = cc.Scene.extend( {
 	
 	ctor: function ( ) {
 		this._super(  );
+		this.init(  );
+	},
+	init : function (  ) {
+		var BaseLayer = ccs.csLoader.createNode( 'res/MainMenu/MainMenuBaseLayer.csb' );		
+				
+		if ( BaseLayer ) {
+			this.addChild( BaseLayer );
+		}
 	}
 	
 } );
-
-MainMenu.scene = function ( ) {
-	var scene = new cc.Scene(  );
-	var layer = new MainMenu ( );
-	scene.addChild( layer );
-	return scene;
-}

@@ -3,7 +3,11 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="MainScene.csd" />
+        <Image Name="BG.png" />
+        <Image Name="audio_64X64.png" />
+        <Image Name="audio_off_64X64.png" />
+        <File Name="Fishfingers.ttf" />
+        <Project Name="MainMenuBaseLayer.csd" />
       </RootFolder>
     </Group>
   </SolutionFolder>

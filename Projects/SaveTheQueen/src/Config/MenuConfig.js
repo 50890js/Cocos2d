@@ -1,0 +1,1 @@
+var g_mainmenu_layers = [  ];
