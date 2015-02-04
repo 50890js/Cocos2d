@@ -5,11 +5,12 @@ var MainMenu = cc.Scene.extend( {
 		this.init(  );
 	},
 	init : function (  ) {
-		var BaseLayer = ccs.csLoader.createNode( 'res/MainMenu/MainMenuBaseLayer.csb' );		
-				
-		if ( BaseLayer ) {
-			this.addChild( BaseLayer );
-		}
+		var BaseLayer = ccs.csLoader.createNode( 'res/MainMenuBaseLayer.json' );
+		var btn = BaseLayer.getChildByName ( 'btn_play' );
+		btn.addTouchEventListener ( function ( sender, type ) {
+			cc.log ( 'Hello World' );
+		}, btn );
+		this.addChild( BaseLayer );
 	}
 	
 } );

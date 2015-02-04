@@ -10,17 +10,14 @@
 		<nature>org.ccdt.cocosproject</nature>
 		<nature>org.ccdt.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>script</name>
-			<type>2</type>
-			<locationURI>GITS/Engine/cocos2d-js/frameworks/js-bindings/bindings/script</locationURI>
-		</link>
+	<cocosprojecttemplate>
+		<version>1.2</version>
+	</cocosprojecttemplate>
+    <linkedResources>
+        <link>
+            <name>script</name>
+            <type>2</type>
+            <locationURI>PROJECT_LOC/frameworks/js-bindings/bindings/script</locationURI>
+        </link>
 	</linkedResources>
-	<variableList>
-		<variable>
-			<name>GITS</name>
-			<value>file:/K:/GITS/Cocos2d</value>
-		</variable>
-	</variableList>
 </projectDescription>
