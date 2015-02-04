@@ -46,6 +46,7 @@ Engine/
 Projects/SaveTheQueen/frameworks/
 Projects/SaveTheQueen/tools/
 Projects/SaveTheQueen/runtime/
+Projects/.metadata/
 
 # Ignore python compiled files
 *.pyc
