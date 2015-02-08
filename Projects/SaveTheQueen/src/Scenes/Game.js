@@ -1,29 +1,46 @@
 var GameScene = cc.Scene.extend ( {
 	
-	//Constructor function for Calss
 	ctor: function ( ) {
-		// Call the super function of the super class 
 		this._super(  );
-		
-		// Call the Init function
 		this.init(  );
 	},
 	init: function ( ) {
+		var _layer = new GameLayer ( );
 		
-		// Window Size variables
-		var visibleSize = cc.winSize;
-		// Position variables
-		var origin = cc.p( visibleSize.width / 2 , visibleSize.height / 2 );
-		
-		// Open up the map tmx file, and set the position
-		var map = cc.TMXTiledMap ( res_tiledmaps.level01 );
-		map.setPosition( origin.x , origin.y );
-		map.setAnchorPoint( 0.5 , 0.5 );		
-		
-		// Add the tmx file to the layer.
-		this.addChild( map );		
+		this.addChild( _layer );
+	}
+	
+} );
+
+var GameLayer = cc.Layer.extend( {
+	
+	ctor: function ( ) {
+		this._super(  );
+		this.init( );
 	},
-	initTiledMap : function ( ) {
+	init: function ( ) {
+		
+		var winSize = cc.winSize;
+		var origin = new cc.p( winSize.width / 2, winSize.height / 2 );
+		
+		this._tilemap = new cc.TMXTiledMap( res_tiledmaps.level01 );
+		this._tilemap.setAnchorPoint( 0.5, 0.5 );
+		this._tilemap.setPosition( origin.x , origin.y );
+		var scale = winSize.height / this._tilemap.height;		
+		
+		
+		var p = this._tilemap.getObjectGroup('SpawnPoints').getObject ( 'playSpawn' );
+		var pos = this._tilemap.convertToWorldSpace( cc.p( p.x, p.y ) );
+		var player = new stqController ( res_icons.sound_normal_png );
+		
+		player.setPosition ( pos.x, pos.y );		
+		
+		
+		this._tilemap.setScale( scale, scale );		
+		
+		this.addChild( player, 1 );		
+		this.addChild( this._tilemap );
 		
 	}
+	
 } );

@@ -12,6 +12,7 @@
     ],
     "jsList":[
         "src/resource.js",
+        "src/Config/globalConfig.js",
         "src/Objects/Controller.js",
         "src/Scenes/SplashScreen.js",
         "src/Scenes/MainMenu.js",
