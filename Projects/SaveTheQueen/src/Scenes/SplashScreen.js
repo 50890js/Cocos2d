@@ -1,6 +1,9 @@
-var SplashScreen = cc.Layer.extend( {
-	_targets: [],
+var SplashScreen = cc.Layer.extend( {	
+	_targets: [], // Array to save the targets	
 	_callback: function ( ) {
+		
+		// Check if we have any thing to fadein and fadeoff
+		// If yes hen use it or else call the callback function
 		if ( this._targets.length > 0 ) {
 			this._targets.shift().runAction ( this.getAction(  ) );
 		} else {
@@ -9,8 +12,11 @@ var SplashScreen = cc.Layer.extend( {
 		}
 	},
 	splashScreenFinishedCallback: null,
+	
+	//Constructor
 	ctor: function ( arguments ) {
 		this._super(  );		
+		
 		this.addTargets( arguments[0] );
 		this.setCallback( arguments[1] );
 		
@@ -26,9 +32,9 @@ var SplashScreen = cc.Layer.extend( {
 		}
 	},
 	getAction: function ( ) {
-		var fi = new cc.FadeIn( 0.5 ),
-			delay = new cc.DelayTime( 1 ),
-			fo = new cc.FadeOut ( 0.5 ),
+		var fi = new cc.FadeIn( this.fadeInTime ),
+			delay = new cc.DelayTime( this.stayTime ),
+			fo = new cc.FadeOut ( this.fadeOutTime ),
 			cb = new cc.CallFunc( this._callback, this ),
 			seq = new cc.Sequence( [ fi, delay, fo, cb ] );
 		
@@ -71,7 +77,9 @@ var SplashScreen = cc.Layer.extend( {
 	}	
 } );
 
-
+SplashScreen.prototype.fadeInTime = 0.5;
+SplashScreen.prototype.stayTime = 0.5;
+SplashScreen.prototype.fadeOutTime = 0.5;
 SplashScreen.scene = function (  ) {
 	var scene = new cc.Scene();	
 	var layer = new SplashScreen ( arguments );

@@ -3,11 +3,21 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Image Name="BG.png" />
-        <Image Name="audio_64X64.png" />
-        <Image Name="audio_off_64X64.png" />
-        <File Name="Fishfingers.ttf" />
-        <Project Name="MainMenuBaseLayer.csd" />
+        <Folder Name="icons">
+          <Image Name="audio_64X64.png" />
+          <Image Name="audio_off_64X64.png" />
+        </Folder>
+        <Folder Name="misc">
+          <File Name="Fishfingers.ttf" />
+        </Folder>
+        <Folder Name="sprites" />
+        <Folder Name="textures">
+          <Image Name="bg.png" />
+        </Folder>
+        <Folder Name="tiled" />
+        <Folder Name="cocosstudio">
+          <Project Name="mainmenu_HomeLayer.csd" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

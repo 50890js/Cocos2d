@@ -58,7 +58,7 @@ cc.game.onStart = function(){
     //load resources
     cc.MenuItemFont.setFontName( 'Fishfingers' );
     cc.LoaderScene.preload(g_resources, function () {
-    	cc.director.runScene( SplashScreen.scene( [ res.cocosLogo_png, new cc.MenuItemFont( 'the four monkeys' ), new cc.MenuItemFont( 'save the queen' )], function ( ) {
+    	cc.director.runScene( SplashScreen.scene( [ new cc.MenuItemFont( 'the four monkeys' ) ], function ( ) {
     		cc.director.runScene( new cc.TransitionFade( 1, new MainMenu ( ) ) );
     	} ) );
     }, this);    
